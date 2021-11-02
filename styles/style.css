@@ -111,7 +111,7 @@ body{
 	opacity: 0;
 	height: 0;
 	width: 0;
-	
+	visibility: hidden;
 	right: 0;
 	font-weight: 400;
 	font-size: 0.9rem;
@@ -135,6 +135,7 @@ body{
 		opacity: 1;
 		height: auto;
 		width: auto;
+		visibility: visible;
 		z-index: 2;
 	}
 	.nav{
