@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root{
-	--color-dark: rgba(8,8,8, 0.9);
+	--color-dark: rgb(50,50,50);
 	--font-nav: 'Noto Sans Mono', monospace;
 }
 
@@ -146,7 +146,7 @@ body{
 		height: 100vh;
 		width: 0;
 		display: flex;
-		align-items: space-between;
+		align-items: center;
 		justify-content: center;
 		flex-direction: column;
 		z-index: 1;
@@ -162,6 +162,7 @@ body{
 		left: 0;
 		opacity: 1;
 		transition: 1s ease;
+		background: var(--color-dark);
 	}
 	.nav__a{
 		display: block;
