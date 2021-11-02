@@ -125,6 +125,9 @@ body{
 
 
 @media only screen and (max-width: 768px){
+	.header{
+		margin-top: 1em;
+	}
 	.header__logo{
 		z-index: 2;
 	}
@@ -176,6 +179,25 @@ body{
 		margin: 0 1.5em;
 		box-sizing: border-box;
 		transition: .3s linear;
+	}
+	.nav__a--padding::before{
+		content: "";
+		position: absolute;
+		background-color: white;
+		bottom: 0;
+		width: 0em;
+		height: 0.1em;
+		transition: width .3s linear;
+	}
+	.nav__a--padding:hover::before{
+		content: "";
+		position: absolute;
+		background-color: white;
+		bottom: 0;
+		width: 100%;
+		height: 0.1em;
+		opacity: 1;
+		transition: width .3s linear;
 	}
 	.nav__a--padding:hover{
 		background: rgba(0,0,0,0);
